@@ -39,6 +39,7 @@
 #define kOverlapCount 4
 
 #ifdef __OS2__
+#include <io.h>
 #include <sys/fcntl.h>
 #define setbinmode(fp) setmode(fileno(fp), O_BINARY)
 #else
